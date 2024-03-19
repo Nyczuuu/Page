@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="iconStar">
+          <img src="./images/icon-star.svg" alt="" class="iconSvg" />
+        </div>
+        <h1 class="heading">How did we do?</h1>
+        <p class="paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratings">
+          <input type="radio" name="rating" id="rating-1" value="1" /><label
+            for="rating-1"
+            >1</label
+          >
+          <input type="radio" name="rating" id="rating-2" value="2" /><label
+            for="rating-2"
+            >2</label
+          >
+          <input type="radio" name="rating" id="rating-3" value="3" /><label
+            for="rating-3"
+            >3</label
+          >
+          <input type="radio" name="rating" id="rating-4" value="4" /><label
+            for="rating-4"
+            >4</label
+          >
+          <input type="radio" name="rating" id="rating-5" value="5" /><label
+            for="rating-5"
+            >5</label
+          >
+        </div>
+        <input
+          type="submit"
+          value="submit"
+          class="submitBtn"
+          onclick="showResult()"
+        />
+      </div>
+      <div class="main mainThankU flag transformBump">
+        <div class="thankUsvg">
+          <img src="./images/illustration-thank-you.svg" alt="" srcset="" />
+        </div>
+        <div class="numberChoice">
+          <div class="choiceDiv">
+            <p class="choiceParagraph">
+              You Selected <span class="chosenNumber"></span> out of 5
+            </p>
+          </div>
+          <h1 class="thanksHeading">Thank you!</h1>
+          <p class="thanksParagraph">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
+
+<!-- Rating state start -->
+
+<!-- How did we do? Please let us know how we did with your support request. All
+    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit -->
+
+<!-- Rating state end -->
+
+<!-- Thank you state start -->
+
+<!-- You selected -->
+<!-- Add rating here -->
+<!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch! -->
+
+<!-- Thank you state end -->

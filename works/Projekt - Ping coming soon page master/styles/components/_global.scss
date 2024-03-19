@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+body {
+  font-family: var(--ff-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .diagrams__img {
+    width: 85%;
+    align-self: center;
+    margin: 4rem 0;
+
+    @media (min-width: 1000px) {
+      width: 50%;
+    }
+  }
+}

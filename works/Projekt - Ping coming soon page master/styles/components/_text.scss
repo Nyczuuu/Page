@@ -1,0 +1,42 @@
+.texty__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .texty__logo {
+    width: 15%;
+    margin: 0 0 2rem 0;
+
+    @media (min-width: 1000px) {
+      width: 7%;
+    }
+  }
+
+  .texty__mainText {
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    color: var(--clr-neutral-gray);
+
+    @media (min-width: 1000px) {
+      font-size: 3rem;
+    }
+
+    .texty__boldText {
+      font-weight: 700;
+      color: var(--clr-primary-black);
+      letter-spacing: normal;
+    }
+  }
+
+  .texty__secondText {
+    font-size: 0.76rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+    @media (min-width: 1000px) {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.socials__container {
+  display: grid;
+  grid-template-columns: repeat(9, 2fr);
+
+  .socials__piece {
+    display: flex;
+    justify-content: center;
+  }
+
+  .facebook__piece {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .socials__circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--clr-neutral-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: var(--clr-primary-blue);
+      cursor: pointer;
+    }
+
+    .socials__icon {
+      color: var(--clr-primary-blue);
+
+      &:hover {
+        color: var(--clr-primary-white);
+      }
+    }
+  }
+}

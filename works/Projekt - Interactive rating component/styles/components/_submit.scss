@@ -1,0 +1,15 @@
+.submitBtn {
+  width: 100%;
+  border-radius: 5rem;
+  border: none;
+  color: var(--clr-neutral-white);
+  background-color: var(--clr-primary-orange);
+  padding: 0.7rem;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-primary-orange);
+    cursor: pointer;
+  }
+}
